@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import EditTask from './EditTask'
 import { completeTask, deleteTask } from '../js/action/TaskAction'
-const TaskItem = (el) => {
+const TaskItem = ({el}) => {
     const dispatch = useDispatch()
     return (
         <div className="task">

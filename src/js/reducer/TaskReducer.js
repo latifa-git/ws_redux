@@ -28,7 +28,7 @@ const initialState = {
 const TaskReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case ADD_TASK:
-      return { ...state, taskList: { ...state.taskList, payload } };
+      return { ...state, taskList: [ ...state.taskList, payload ] };
     case DELETE_TASK:
       return {
         ...state,
